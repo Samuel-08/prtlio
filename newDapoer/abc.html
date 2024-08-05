@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <style>
+    :root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+    --primary-color: #ff5733;
+    --background-color: #fff;
+    --footer-background-color: #353535;
+    --text-color: #000;
+    --link-hover-color: #ff7f50;
+    --border-color: #d9d9d9;
+    --button-hover-bg: #e03a29;
+    --learn-more-hover-bg: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font-family);
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: var(--background-color);
+    box-shadow: 0 4px 4.8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-list-item {
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-list-item:hover {
+    color: var(--link-hover-color);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: #ffc300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.get-started {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.get-started:hover {
+    background: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+.learn-more {
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+.learn-more:hover {
+    background: var(--learn-more-hover-bg);
+    transform: translateY(-2px);
+}
+
+.products {
+    padding: 60px 0;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background: url(../images/product.png) no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.product-title {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: var(--footer-background-color);
+    color: #fff;
+    text-align: center;
+}
+
+  </style>  
+  </head>
+<body>
+    <header class="navbar" role="banner">
+        <div class="logo" aria-label="Logo"></div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#" class="navbar-list-item">Home</a></li>
+                <li><a href="#" class="navbar-list-item">About</a></li>
+                <li><a href="#" class="navbar-list-item">Contact</a></li>
+                <li><a href="#" class="navbar-list-item">Promo</a></li>
+                <li><a href="#" class="navbar-list-item">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="hero">
+            <h1>Welcome to Our Website!</h1>
+            <p>We are glad to have you here. Explore our offerings!</p>
+            <div class="buttons">
+                <a href="#" class="button get-started">Get Started</a>
+                <a href="#" class="button learn-more">Learn More</a>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-item">
+                <div class="product-image" aria-label="Product 1 Image"></div>
+                <div class="product-title">Product 1</div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" aria-label="Product 2 Image"></div>
+                <div class="product-title">Product 2</div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" aria-label="Product 3 Image"></div>
+                <div class="product-title">Product 3</div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" aria-label="Product 4 Image"></div>
+                <div class="product-title">Product 4</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>© 2023 Our Company. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>

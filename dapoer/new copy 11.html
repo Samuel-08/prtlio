@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 4.8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar img {
+            width: 50px;
+        }
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+        }
+        .login-container {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container:hover {
+            background-color: #e63d1a;
+        }
+        .content {
+            padding: 40px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #0fa958;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #1aad40;
+        }
+        footer {
+            background-color: #d9d9d9;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+        @media screen and (max-width: 750px) {
+            .nav-links {
+                display: none;
+            }
+            .navbar {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <img src="./public/logo-1@2x.png" alt="Logo Dapoer Ayam" />
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Promo</a></li>
+                </ul>
+                <button class="login-container">Login</button>
+            </nav>
+        </header>
+        <section class="content">
+            <h3>Hubungi Kami</h3>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan email Anda" />
+            </div>
+            <div class="form-group">
+                <label for="noHp">No. Hp</label>
+                <input type="text" id="noHp" placeholder="Masukkan nomor HP" />
+            </div>
+            <div class="form-group">
+                <label for="subjek">Subjek</label>
+                <textarea id="subjek" rows="4" placeholder="Masukkan subjek"></textarea>
+            </div>
+            <button class="button">Kirim</button>
+        </section>
+        <footer>
+            <div>
+                <h3>Temukan Kami</h3>
+                <p>No Telp : 0853-2132-1234</p>
+                <p>Email : DapoerAyam@contactmail.com</p>
+                <p>Alamat : Jl. Soekarno Hatta No.177 RT.19 RW. 45</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <img src="./public/hugeiconstiktok.svg" alt="TikTok" />
+                <img src="./public/arcticonstokopedia.svg" alt="Tokopedia" />
+                <img src="./public/simpleiconsshopee.svg" alt="Shopee" />
+                <img src="./public/mdiinstagram.svg" alt="Instagram" />
+                <img src="./public/icbaselinefacebook.svg" alt="Facebook" />
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

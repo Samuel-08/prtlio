@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Layout</title>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #000;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #34c759;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.site-footer {
+    background-color: #d9d9d9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info, .footer-social {
+    width: 45%;
+}
+
+.footer-social img {
+    width: 24px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <h1 class="title">Welcome to Our Site</h1>
+        <section class="form-section">
+            <h2 class="form-title">Get In Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p>Phone: 0853-2132-1234</p>
+            <p>Email: DapoerAyam@contactmail.com</p>
+            <p>Address: Jl. Soekarno Hatta No.177 RT.19 RW. 45</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="path/to/tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="path/to/tokopedia-icon.png" alt="Tokopedia"></a>
+            <a href="#"><img src="path/to/shopee-icon.png" alt="Shopee"></a>
+            <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

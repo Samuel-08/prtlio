@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saran Dan Masukan</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+        :root {
+            --primary-color: #ffc107;
+            --secondary-color: #ff5722;
+            --accent-color: red;
+            --background-color: #fff9c4;
+            --text-color: black;
+            --border-color: #ccc;
+            --hover-background: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 400ms ease-out;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        nav button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 2px solid var(--secondary-color);
+            transition: all 300ms ease-out;
+        }
+
+        nav button:hover {
+            background-color: var(--hover-background);
+            border-color: var(--hover-background);
+            color: var(--accent-color);
+        }
+
+        main {
+            padding: 32px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        form {
+            margin-bottom: 32px;
+            background-color: white;
+            padding: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 16px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .italic {
+            font-style: italic;
+            margin-top: 16px;
+        }
+
+        .notice {
+            background-color: var(--background-color);
+            border: 1px solid #ffeb3b;
+            padding: 16px;
+            margin-top: 32px;
+            border-radius: 4px;
+        }
+
+        .notice h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            padding: 16px;
+            margin-top: 32px;
+        }
+
+        footer .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        footer p {
+            margin: 4px 0;
+        }
+
+        .social-icons a {
+            margin-right: 8px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 24px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-color);
+            transition: color 600ms ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .flex {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img alt="Logo" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-5OOJvcvgXLCyVErVpU01qF8t/user-nE92ZPd3mRxQJUnMM8GwMay9/img-RDbsMKIwQzYcFy1UPflMuaIh.png?st=2024-07-10T04%3A01%3A54Z&amp;se=2024-07-10T06%3A01%3A54Z&amp;sp=r&amp;sv=2023-11-03&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-07-10T02%3A38%3A36Z&amp;ske=2024-07-11T02%3A38%3A36Z&amp;sks=b&amp;skv=2023-11-03&amp;sig=LKnqQzGi3HWiYci5Bq6dqdHRkYqdMObbtfoRxoPgiJU%3D" width="50"/>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Promo</a></li>
+            </ul>
+            <button>Login</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Saran Dan Masukan</h1>
+        <form>
+            <div>
+                <label for="nama">Nama <span style="color: red;">*</span></label>
+                <input type="text" id="nama" name="nama" required />
+            </div>
+            <div>
+                <label for="email">Email <span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+                <label for="nohp">No. Hp <span style="color: red;">*</span></label>
+                <input type="tel" id="nohp" name="nohp" required pattern="[0-9]{10,13}" />
+            </div>
+            <div>
+                <label for="alamat">Alamat <span style="color: red;">*</span></label>
+                <input type="text" id="alamat" name="alamat" required />
+            </div>
+            <div>
+                <label for="keterangan">Keterangan</label>
+                <input type="text" id="keterangan" name="keterangan" />
+            </div>
+            <button type="submit">Masukan</button>
+        </form>
+        <p class="italic">
+            Pihak kami akan segera menghubungi setelah anda mengirimkan pesan. <br />
+            Untuk memastikan kebenaran data yang anda berikan.
+        </p>
+        <section class="notice">
+            <h2>Perhatian</h2>
+            <p>Setelah melakukan transaksi dengan kami, data anda tidak akan kami simpan maupun digunakan untuk keuntungan kami.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div>
+                <h3>Temukan Kami</h3>
+                <p>No Telp : 0853-2132-1234</p>
+                <p>Email : DapoerAyam@contactmail.com</p>
+                <p>Alamat : Jl. Soekarno Hatta No.177</p>
+                <p>RT:19 RW: 45</p>
+            </div>
+            <div>
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

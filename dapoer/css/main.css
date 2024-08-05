@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*
+<uniquifier>: Use a unique and descriptive class name 
+<weight>: Use a value from 100 to 900 
+.inter-<uniquifier> {
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+font-variation-settings:
+"slnt" 0;
+} 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #f9f9f9;
+  --secondary: #cdced7;
+  --danger: #f11332;
+  --primary: #ffc300;
+  --keterangan: 400 0.625rem/1rem Inter;
+  --quote: 400 0.75rem/1rem Inter;
+  --header1: 400 2.625rem/1rem Inter;
+  --header2: 400 2.1875rem/1rem Inter;
+  --header3: 400 1.8125rem/1rem Inter;
+  --header4: 400 1.5rem/1rem Inter;
+  --header5: 400 1.25rem/1rem Inter;
+  --header6: 400 1.0625rem/1rem Inter;
+  --paragraf: 400 0.875rem/1rem Inter;
+  --semibold-header1: semi bold 2.625rem/1rem Inter;
+  --semibold-header2: semi bold 2.1875rem/1rem Inter;
+  --semibold-header3: semi bold 1.8125rem/1rem Inter;
+  --semibold-header4: semi bold 1.5rem/1rem Inter;
+  --semibold-header5: semi bold 1.25rem/1rem Inter;
+  --semibold-header6: semi bold 1.0625rem/1rem Inter;
+  --mediumketerangan: 500 0.625rem/1rem Inter;
+  --mediumquote: 500 0.75rem/1rem Inter;
+  --mediumparagraf: 500 0.875rem/1rem Inter;
+  --italicketerangan: italic 0.625rem/1rem Inter;
+  --italicquote: italic 0.75rem/1rem Inter;
+  --italicparagraf: italic 0.875rem/1rem Inter;
+}
+
+/* Optional
+
+body {
+font-size: 14px;
+}
+
+.v11_88 {
+width: 300px;
+height: 360px;
+background: url("../images/vI11_629_175.png");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+opacity: 1;
+position: relative;
+top: 0px;
+left: 0px;
+overflow: hidden;
+}
+
+.name {
+color: #fff;
+} */
+
+
+.card {
+  /* height:360px; */
+  width: 300px;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.cardimage {
+  background-color: #ffffff03;
+  height: 400px;
+  width: 300px;
+  /* filter:drop-shadow(0px 0px 20px #000000ec); */
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.42);
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-style: hidden;
+  outline: none;
+}
+
+.rectangle2 {
+  height: 240px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.titlecard {
+  color: #000000;
+  text-align: center;
+  vertical-align: text-top;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  line-height:20px;
+  width: 300px;
+}
+
+.bodycard {
+  color: #000000;
+  text-align: center;
+  vertical-align: text-top;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height:20px;
+  border-style: hidden;
+  outline: none;
+  width: 300px;
+}

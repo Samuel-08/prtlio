@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dapoer Ayam</title>
+    <style>
+        :root {
+            --default-font-family: 'Inter', sans-serif;
+            --primary-color: #2c3e50; /* Example */
+            --secondary-color: #ff5728; /* Example */
+            --background-color: #ecf0f1; /* Example */
+            --text-color: #3964da; /* Example */
+        }
+
+        body {
+            font-family: var(--default-font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-image: url(./assets/images/logo.png);
+            background-size: cover;
+            margin-right: 2rem;
+        }
+
+        .navbar-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .navbar-list-link {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+        }
+        .navbar-list-link:hover {
+            color: var(--secondary-color);
+        }
+  
+        .navbar-list-button{
+          display: inline-block;
+            padding: 0.5rem 0.8rem;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border-radius: 0.5rem; 
+            font-weight: 600;
+            transition: background-color 0.3s ease-out; 
+        }
+        .navbar-list-button:hover{
+          background-color: var(--text-color) ;
+          color: var(--secondary-color);
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(./assets/images/hero.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .hero-description {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-out;
+        }
+
+        .hero-button:hover {
+            background-color: #ffff0f;
+        }
+
+        .menu {
+            padding: 4rem 2rem;
+            background-color: var(--background-color);
+        }
+
+        .menu-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .menu-list-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(33.333% - 2rem);
+            background-color: var(--primary-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-out;
+        }
+
+        .menu-list-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+        }
+
+        .menu-description,
+        .menu-price {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .menu-price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .menu-button {
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-out;
+        }
+
+        .menu-button:hover {
+            background-color: #ffff0f;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            padding: 2rem;
+            color: var(--text-color);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-social-list {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-social-list-item {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .footer-social-link {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+        }
+
+        .footer-social-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+
+            .menu-list-item {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: 30vh;
+            }
+
+            .menu-list-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"></div>
+            <ul class="navbar-list">
+                <li class="navbar-list-item"><a href="#" class="navbar-list-link">Home</a></li>
+                <li class="navbar-list-item"><a href="#" class="navbar-list-link">About</a></li>
+                <li class="navbar-list-item"><a href="#" class="navbar-list-link">Contact</a></li>
+                <li class="navbar-list-item"><a href="#" class="navbar-list-link">Promo</a></li>
+                <li class="navbar-list-item"><button class="navbar-list-button">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Selamat Datang di Dapoer Ayam</h1>
+                <p class="hero-description">Memberikan Hidangan Terbaik Untukmu</p>
+                <button class="hero-button">Lihat yang lain</button>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+        <section class="menu">
+            <h2 class="menu-title">Menu Andalan</h2>
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <div class="menu-image"></div>
+                    <h3 class="menu-title">Boneless</h3>
+                    <p class="menu-description">Tanpa Tulang</p>
+                    <p class="menu-price">Rp 20.000</p>
+                    <button class="menu-button">Tambahkan</button>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-image"></div>
+                    <h3 class="menu-title">Honey BBQ Wings</h3>
+                    <p class="menu-description">Sayap Madu BBQ</p>
+                    <p class="menu-price">Rp 20.000</p>
+                    <button class="menu-button">Tambahkan</button>
+                </li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="footer-title">Temukan Kami</h2>
+            <p class="footer-description">No Telp : 0853-2132-1234<br />Email : DapoerAyam@contactmail.com<br />Alamat : Jl. Soekarno Hatta No.177 RT.19 RW. 45</p>
+        </div>
+        <div class="footer-social">
+            <h2 class="footer-title">Ikuti Kami</h2>
+            <ul class="footer-social-list">
+                <li class="footer-social-list-item"><a href="#" class="footer-social-link"><i class="fab fa-tiktok"></i></a></li>
+                <li class="footer-social-list-item"><a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="footer-social-list-item"><a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a></li>
+                <!-- Add more social icons as needed -->
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // Selectors
+        const navbar = document.querySelector('.navbar');
+        const navbarList = document.querySelector('.navbar-list');
+        const navbarListItems = document.querySelectorAll('.navbar-list-item');
+        const heroButton = document.querySelector('.hero-button');
+        const menuListItems = document.querySelectorAll('.menu-list-item');
+
+        // Event Listeners
+        navbarListItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                // Add logic for item click, if necessary
+            });
+        });
+
+        heroButton.addEventListener('click', () => {
+            console.log('Hero button clicked!');
+        });
+
+        menuListItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                console.log('Menu item clicked!');
+            });
+        });
+    </script>
+</body>
+</html>

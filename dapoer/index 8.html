@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fried Chicken Franchise</title>
+<style>
+     body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffd700;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .login {
+    background-color: #ff4500;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://via.placeholder.com/1200x300");
+    background-size: cover;
+    background-position: center;
+}
+
+.filter {
+    padding: 20px;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select,
+.filter input[type="text"] {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+}
+
+.card button {
+    background-color: #ff4500;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .contact-info {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="logo.png" alt="Franchise Logo" />
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Promo</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login">Login</a>
+        </div>
+    </header>
+    <main>
+        <div class="header-image"></div>
+        <section class="filter">
+            <label for="bagian">Bagian</label>
+            <select name="bagian" id="bagian">
+                <option value="Bagian">Bagian</option>
+            </select>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option value="Ukuran">Ukuran</option>
+            </select>
+            <label for="kematangan">Kematangan</label>
+            <select name="kematangan" id="kematangan">
+                <option value="Kematangan">Kematangan</option>
+            </select>
+            <label for="harga">Harga</label>
+            <select name="harga" id="harga">
+                <option value="Harga">Harga</option>
+            </select>
+            <input type="text" placeholder="Cari" aria-label="Search"/>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Crispy Fried Chicken Image">
+                <div class="card-content">
+                    <h3>Title Card</h3>
+                    <p>Body Card</p>
+                </div>
+                <button>BUTTON</button>
+            </div>
+            <!-- Repeat the .card div for other cards -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="contact-info">
+                <p>No Telp : 0853-2132-1234</p>
+                <p>Email : DappeAyam@contactmail.com</p>
+                <p>Alamat : Jl. Soekarno Hatta No.177 RT:19 RW:45</p>
+            </div>
+            <div class="social-icons">
+                <img src="social-icon1.png" alt="Social Icon 1" />
+                <img src="social-icon2.png" alt="Social Icon 2" />
+                <img src="social-icon3.png" alt="Social Icon 3" />
+                <img src="social-icon4.png" alt="Social Icon 4" />
+            </div>
+        </div>
+    </footer>
+    <script>
+     // Example JavaScript for filter functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const filterInputs = document.querySelectorAll('.filter select, .filter input[type="text"]');
+    
+    filterInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            // Add your filter logic here
+            console.log('Filter changed:', input.value);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

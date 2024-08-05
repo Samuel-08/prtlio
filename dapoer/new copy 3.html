@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <title>Saran dan Masukan</title>
+    <style>
+        :root {
+  --color-primary: #ff5733;
+  --color-primary-hover: #e63d1a;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #ccc;
+  --padding-small: 8px;
+  --padding-medium: 16px;
+  --padding-large: 24px;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-large);
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  margin: 0 var(--padding-small);
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  padding: var(--padding-small) var(--padding-medium);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.content {
+  padding: var(--padding-large);
+  display: flex;
+  flex-direction: column;
+}
+
+h3.title {
+  font-size: 1.5rem;
+  margin-bottom: var(--padding-medium);
+}
+
+label {
+  margin: var(--padding-small) 0;
+}
+
+input {
+  padding: var(--padding-small);
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-large);
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--padding-medium);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="./public/logo-1@2x.png" alt="Logo" />
+        <div>
+            <span class="nav-item">Home</span>
+            <span class="nav-item">About</span>
+            <span class="nav-item">Contact</span>
+            <span class="nav-item">Promo</span>
+            <button class="login-button">Login</button>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h3 class="title">Saran Dan Masukan</h3>
+        <form>
+            <label for="name">Nama</label>
+            <input id="name" type="text" required />
+
+            <label for="phone">No. Hp</label>
+            <input id="phone" type="tel" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+
+            <label for="address">Alamat</label>
+            <input id="address" type="text" required />
+
+            <label for="description">Keterangan</label>
+            <input id="description" type="text" required />
+
+            <button class="content-row8" type="submit">Masukan</button>
+        </form>
+        <p>Pihak kami akan segera menghubungi setelah anda mengirimkan pesan untuk memastikan kebenaran data yang anda berikan.</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Temukan Kami</h3>
+            <p>No Telp: 0853-2132-1234</p>
+            <p>Email: DapoerAyam@contactmail.com</p>
+            <p>Alamat: Jl. Soekarno Hatta No.177 RT.19 RW. 45</p>
+        </div>
+        <div class="footer-column">
+            <h3>Ikuti Kami</h3>
+            <div class="social-icons">
+                <!-- Icons can be added here -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

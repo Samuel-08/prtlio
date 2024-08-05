@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapoer Ayam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Tambahkan background untuk kontras */
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: #fff; /* Ganti warna latar untuk navbar */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav img {
+            width: 50px;
+            height: 50px;
+        }
+        nav a {
+            margin-left: 16px;
+            color: #2D3748;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #E53E3E; /* Menambahkan efek hover */
+        }
+        nav button {
+            padding: 8px 16px;
+            color: white;
+            background-color: #E53E3E;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer; /* Menambahkan kursor pointer */
+        }
+        nav button:hover {
+            background-color: #C53030; /* Warna hover untuk tombol */
+        }
+        .hero {
+            text-align: center;
+            background-color: #ffc300;
+            padding: 40px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem; /* Menggunakan rem untuk ukuran font */
+            color: black;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: black;
+            margin: 10px 0;
+        }
+        .hero button {
+            margin-top: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #E53E3E;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .hero img {
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+        .info-section {
+            background-color: #ffc300;
+            padding: 40px 20px;
+        }
+        .info-section .info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Agar responsif */
+        }
+        .info-section .info div {
+            max-width: 300px;
+            text-align: left;
+            margin: 16px; /* Memberikan jarak antar elemen */
+        }
+        .info-section h2 {
+            font-size: 1.5rem;
+            color: black;
+        }
+        .info-section p {
+            color: black;
+        }
+        .info-section img {
+            margin-top: 16px;
+            border-radius: 8px;
+            width: 100%; /* Memastikan gambar responsif */
+        }
+        .menu-section {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+        .menu-section h2 {
+            font-size: 2rem;
+            color: black;
+            margin: 0;
+        }
+        .menu-section .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 32px;
+            flex-wrap: wrap; /* Agar responsif */
+        }
+        .menu-section .menu div {
+            max-width: 200px;
+            padding: 16px;
+            border: 1px solid #E2E8F0; 
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .menu-section .menu div:hover {
+            transform: scale(1.05); /* Efek hover */
+            background-color: #EDF2F7;
+        }
+        .menu-section .menu img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .menu-section h3 {
+            font-size: 1.25rem;
+            color: black;
+            margin: 16px 0 8px;
+        }
+        .menu-section p {
+            color: #4A5568;
+        }
+        .menu-section button {
+            margin-top: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #E53E3E;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .menu-section button:hover {
+            background-color: #C53030; /* Warna hover untuk tombol */
+        }
+        footer {
+            background-color: #EDF2F7;
+            padding: 40px 20px;
+        }
+        footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Agar responsif */
+        }
+        footer h4 {
+            font-size: 1.25rem;
+            color: black;
+            margin: 0;
+        }
+        footer p {
+            color: black;
+        }
+        footer .social-icons {
+            display: flex;
+            margin-top: 16px;
+        }
+        footer .social-icons a {
+            color: black;
+            margin-left: 16px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #E53E3E; /* Efek hover untuk ikon sosial */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .info-section .info {
+                flex-direction: column; /* Menjadikan elemen vertikal di perangkat kecil */
+            }
+            .menu-section .menu {
+                flex-direction: column; /* Menu juga menjadi vertikal */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <img src="https://placehold.co/50x50" alt="Logo Dapoer Ayam">
+        </div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Promo</a>
+            <button>Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Selamat Datang di Dapoer Ayam</h1>
+        <p>Memberikan Hidangan Terbaik Untukmu</p>
+        <button>Lihat yang lain</button>
+        <img src="https://placehold.co/150x150" alt="Fried chicken and fries with ketchup">
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info">
+            <div>
+                <h2>Kami</h2>
+                <p>Kami sangat antusias dalam menyajikan ayam goreng terlezat dengan perpaduan bumbu yang sempurna dan kulit keemasan yang renyah.</p>
+                <img src="https://placehold.co/150x150" alt="Fried chicken">
+            </div>
+            <div>
+                <h2>Komitmen</h2>
+                <p>Kami terhadap kualitas dan rasa telah membuat kami menjadi bagian penting di antara pecinta kuliner ayam goreng.</p>
+                <img src="https://placehold.co/150x150" alt="Fried chicken tenders with sauce">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2>Menu Andalan</h2>
+        <div class="menu">
+            <div>
+                <img src="https://placehold.co/200x200" alt="Boneless chicken">
+                <h3>Boneless</h3>
+                <p>Tanpa Tulang</p>
+            </div>
+            <div>
+                <img src="https://placehold.co/200x200" alt="Honey BBQ wings">
+                <h3>Honey BBQ Wings</h3>
+                <p>Sayap Madu BBQ</p>
+            </div>
+            <div>
+                <img src="https://placehold.co/200x200" alt="Chicken Nuggets">
+                <h3>Chicken Nuggets</h3>
+                <p>Nugget Ayam</p> <!-- Perbaikan pada menu -->
+            </div>
+        </div>
+        <button>Lihat Lainnya</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Temukan Kami</h4>
+                <p>No Telp: 0853-2132-1234</p>
+                <p>Email: DapoerAyam@contactmail.com</p>
+                <p>Alamat: Jl. Soekarno Hatta No.177 RT.19 RW.45</p>
+            </div>
+            <div>
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

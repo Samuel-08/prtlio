@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Dapoer Ayam</title>
+    <style>
+        :root {
+            --primary-color: #ffc300;
+            --secondary-color: #ffaeaf;
+            --text-color: #000000;
+            --background-color: #ffffff;
+            --footer-background: #eaeaea;
+            --button-color: #ff5733;
+            --font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: var(--background-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .login {
+            padding: 10px 20px;
+            background-color: var(--button-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding: 100px 20px;
+            color: var(--text-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background-color: var(--button-color);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .content h2 {
+            font-size: 2rem;
+        }
+
+        .content p {
+            font-size: 1.25rem;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: var(--footer-background);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .contact,
+        .social {
+            flex: 1;
+            margin-bottom: 20px;
+            min-width: 200px; /* Menjamin ukuran minimum untuk tampilan yang baik */
+        }
+
+        .social a {
+            display: block;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo Dapoer Ayam">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Promo</a></li>
+            </ul>
+            <button class="login">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Selamat Datang di Dapoer Ayam</h1>
+            <p>Memberikan Hidangan Terbaik Untukmu</p>
+            <button>Lihat yang lain</button>
+        </section>
+
+        <section class="content">
+            <div>
+                <h2>Kami</h2>
+                <p>Kami sangat antusias dalam menyajikan ayam goreng terlezat dengan perpaduan bumbu yang sempurna dan kulit keemasan yang renyah.</p>
+                <img src="fried-chicken-placeholder.png" alt="Ayam Goreng">
+            </div>
+            <div>
+                <h2>Komitmen</h2>
+                <p>Kami berkomitmen terhadap kualitas dan rasa, yang telah membuat kami menjadi bagian penting di antara pecinta kuliner ayam goreng.</p>
+                <img src="chicken-wings-placeholder.png" alt="Sayap Ayam">
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2>Menu Andalan</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="boneless-chicken-placeholder.png" alt="Ayam Tanpa Tulang">
+                    <p>Boneless<br>Tanpa Tulang</p>
+                </div>
+                <div class="menu-item">
+                    <img src="honey-bbq-wings-placeholder.png" alt="Sayap Madu BBQ">
+                    <p>Honey BBQ Wings<br>Sayap Madu BBQ</p>
+                </div>
+                <div class="menu-item">
+                    <img src="spicy-wings-placeholder.png" alt="Sayap Pedas">
+                    <p>Spicy Wings<br>Sayap Pedas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>No Telp: 0853-2132-1234</p>
+            <p>Email: DapoerAyam@contactmail.com</p>
+            <p>Alamat: Jl. Soekarno Hatta No.177 RT:19 RW. 45</p>
+        </div>
+        <div class="social">
+            <h2>Ikuti Kami</h2>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </footer>
+</body>
+
+</html>
