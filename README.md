@@ -1,6 +1,6 @@
 ![Frame 427318928](https://github.com/user-attachments/assets/24c9b1e9-6405-420e-929a-a9d7e26a85ee)
 ---
-# Dapoer Ayam
+[^2]: # Dapoer Ayam 1231434
 
 Dapoer Ayam adalah aplikasi web dinamis yang dirancang untuk mendukung franchise ayam goreng. Aplikasi ini menyediakan informasi tentang menu, lokasi cabang, dan promosi terkini. Teknologi yang digunakan dalam pengembangan aplikasi ini meliputi HTML, CSS, dan Vanilla JavaScript. Desain aplikasi dibuat menggunakan Figma.
 
@@ -68,14 +68,20 @@ Dokumentasi lebih lanjut tentang setiap komponen aplikasi dapat ditemukan dalam 
 
 Berikut adalah contoh penggunaan fitur-fitur aplikasi:
 
-- **Menu Display**:
-  ![Menu Screenshot](../images/images (4).png)
-  
-- **Branch Locator**:
-  ![Branch Locator Screenshot](images/branch-locator-screenshot.png)
+- ## **Login Display**:
+ ![Login](https://github.com/user-attachments/assets/f9d6bdcb-63af-4770-b55c-fd51ef277488)
 
-- **Promotions**:
-  ![Promotions Screenshot](images/promotions-screenshot.png)
+--- ---
+
+- **Top 3**:
+  ![Page Top 3](https://github.com/user-attachments/assets/0f75ff49-cf01-4ce1-81b1-9af3fc86b5a1)
+
+--- ---
+
+- **Promosi**: 
+  ![Page Promosi](https://github.com/user-attachments/assets/f41f200d-f16f-4780-9c79-ee0b1a2ea6af)
+
+--- ---
 
 ## Troubleshooting
 
@@ -245,15 +251,7 @@ To execute tests, run:
 pytest
 ```
 
----
-
-## 🛠 Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
-
----
+--- 
 
 ## 🤝 Contributing
 
