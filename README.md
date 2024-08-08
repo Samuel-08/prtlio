@@ -1,3 +1,5 @@
+![Frame 427318928](https://github.com/user-attachments/assets/24c9b1e9-6405-420e-929a-a9d7e26a85ee)
+---
 # Dapoer Ayam
 
 Dapoer Ayam adalah aplikasi web dinamis yang dirancang untuk mendukung franchise ayam goreng. Aplikasi ini menyediakan informasi tentang menu, lokasi cabang, dan promosi terkini. Teknologi yang digunakan dalam pengembangan aplikasi ini meliputi HTML, CSS, dan Vanilla JavaScript. Desain aplikasi dibuat menggunakan Figma.
