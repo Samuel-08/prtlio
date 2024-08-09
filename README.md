@@ -1,10 +1,13 @@
-## ![Frame 427318928](https://github.com/user-attachments/assets/24c9b1e9-6405-420e-929a-a9d7e26a85ee)
+### ![Frame 427318928](https://github.com/user-attachments/assets/24c9b1e9-6405-420e-929a-a9d7e26a85ee)
 
-# Dapoer Ayam
+ ---
+---
 
-Dapoer Ayam adalah aplikasi web dinamis yang dirancang untuk mendukung franchise ayam goreng. Aplikasi ini menyediakan informasi tentang menu, lokasi cabang, dan promosi terkini. Teknologi yang digunakan dalam pengembangan aplikasi ini meliputi HTML, CSS, dan Vanilla JavaScript. Desain aplikasi dibuat menggunakan Figma.
+# 🍗 Dapoer Ayam
 
-## Table of Contents
+Dapoer Ayam adalah aplikasi web kece yang dibuat khusus buat mendukung franchise ayam goreng. Di sini, kamu bisa nemuin info seputar menu, lokasi cabang, dan promo-promo terkini. Aplikasi ini dibangun dengan HTML, CSS, dan Vanilla JavaScript. Desainnya? Cuss, dibuat pakai Figma!
+
+## 📚 Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -18,43 +21,44 @@ Dapoer Ayam adalah aplikasi web dinamis yang dirancang untuk mendukung franchise
 - [Contributors](#contributors)
 - [License](#license)
 
-## Introduction
+## 👋 Introduction
 
-Dapoer Ayam adalah solusi digital untuk mengelola dan mempromosikan franchise ayam goreng. Aplikasi ini memungkinkan pengguna untuk melihat menu, mencari lokasi cabang terdekat, dan mendapatkan informasi tentang promosi terbaru.
+Dapoer Ayam adalah solusi digital buat mengelola dan mempromosikan franchise ayam goreng. Dengan aplikasi ini, pengguna bisa cek menu, cari lokasi cabang terdekat, dan dapetin info promo terbaru. Simpel, kan?
 
-## Features
+## ✨ Features
 
-- **Menu Display**: Menampilkan daftar menu dengan deskripsi dan harga.
-- **Branch Locator**: Menunjukkan lokasi cabang terdekat menggunakan peta interaktif.
-- **Promotions**: Menampilkan promosi dan penawaran khusus terkini.
-- **Responsive Design**: Tampilan yang responsif dan dapat diakses di berbagai perangkat.
+- **Menu Display**: Menampilkan daftar menu lengkap dengan deskripsi dan harga.
+- **Branch Locator**: Menunjukkan lokasi cabang terdekat dengan peta interaktif. 
+- **Promotions**: Info tentang promo dan penawaran khusus terkini.
+- **Responsive Design**: Tampilan responsif yang asik diakses di berbagai perangkat.
 
-## Installation
+## 🛠️ Installation
 
-Untuk menjalankan aplikasi ini secara lokal, ikuti langkah-langkah berikut:
+Mau coba aplikasi ini di lokal? Ikuti langkah-langkah gampang berikut:
 
 1. Clone repositori ini:
    ```sh
    git clone https://github.com/username/dapoer-ayam.git
    ```
-2. Navigasi ke direktori proyek:
+2. Masuk ke direktori proyek:
    ```sh
    cd dapoer-ayam
    ```
-3. Buka file `index.html` di peramban web Anda.
+3. Buka file `index.html` di browser kamu.
 
-## Usage
+## 🚀 Usage
 
-Setelah instalasi, Anda dapat mulai menggunakan aplikasi dengan membuka file `index.html` di peramban web. Anda akan melihat halaman utama dengan menu, lokasi cabang, dan promosi terkini.
+Setelah install, buka file `index.html` di browser. Siap-siap lihat halaman utama yang penuh menu, lokasi cabang, dan promo menarik!
 
-## Dependencies
+## 📦 Dependencies
 
-Aplikasi ini tidak memiliki dependensi eksternal dan menggunakan teknologi berikut:
+Aplikasi ini clean tanpa dependensi eksternal, hanya menggunakan teknologi berikut:
 
 - HTML
 - CSS
 - Vanilla JavaScript
 - Figma
+
 ## 📂 Repository Structure
 
 ```sh
@@ -68,82 +72,18 @@ Aplikasi ini tidak memiliki dependensi eksternal dan menggunakan teknologi berik
     │   ├── home 3.html
     │   ├── home.html
     │   ├── images
-    │   │   ├── Logo.png
-    │   │   ├── images (1).png
-    │   │   ├── images (3).png
-    │   │   ├── images (4).png
-    │   │   ├── images (5).png
-    │   │   ├── images (6).png
-    │   │   ├── images2.png
-    │   │   ├── img (1).png
-    │   │   ├── img (10).png
-    │   │   ├── img (12).png
-    │   │   ├── img (15).png
-    │   │   ├── img (16).png
-    │   │   ├── img (18).png
-    │   │   ├── img (19).png
-    │   │   ├── img (2).png
-    │   │   ├── img (20).png
-    │   │   ├── img (24).png
-    │   │   ├── img (25).png
-    │   │   ├── img (26).png
-    │   │   ├── img (28).png
-    │   │   ├── img (31).png
-    │   │   ├── img (33).png
-    │   │   ├── img (36).png
-    │   │   ├── img (37).png
-    │   │   ├── img (39).png
-    │   │   ├── img (4).png
-    │   │   ├── img (40).png
-    │   │   ├── img (41).png
-    │   │   ├── img (43).png
-    │   │   ├── img (44).png
-    │   │   ├── img (5).png
-    │   │   ├── img (6).png
-    │   │   ├── img (7).png
-    │   │   ├── img (8).png
-    │   │   ├── img (9).png
-    │   │   ├── img(_ (10).png
-    │   │   ├── img(_ (11).png
-    │   │   ├── img(_ (2).png
-    │   │   ├── img(_ (3).png
-    │   │   ├── img(_ (4).png
-    │   │   ├── img(_ (5).png
-    │   │   ├── img(_ (6).png
-    │   │   ├── img(_ (7).png
-    │   │   ├── img(_ (8).png
-    │   │   └── img(_ (9).png
+    │   │   └── [Berbagai gambar di sini]
     │   ├── index 4.html
-    │   ├── index 5.html
-    │   ├── index 8.html
-    │   ├── index7.html
     │   ├── login.html
-    │   ├── login2.html
-    │   ├── login3.html
-    │   ├── new copy 10.html
-    │   ├── new copy 11.html
-    │   ├── new copy 3.html
-    │   ├── new copy 4.html
-    │   ├── new copy 5.html
-    │   ├── new copy 6.html
-    │   ├── new copy 7.html
-    │   ├── new copy 8.html
-    │   └── new.html
+    │   └── [File HTML lainnya]
     └── newDapoer
         ├── abc.html
         ├── assets
         │   └── images
         │       └── images2.png
         ├── new copy 9.html
-        ├── rev-2.html
-        ├── rev-3.html
-        ├── rev-4.html
-        ├── rev-5.html
-        ├── rev-6.html
-        └── revisiIndex.html
+        └── [File HTML lainnya]
 ```
-
----
 
 ## 🧩 Modules
 
@@ -151,7 +91,7 @@ Aplikasi ini tidak memiliki dependensi eksternal dan menggunakan teknologi berik
 
 | File                                                                                           | Summary                         |
 | ---------------------------------------------------------------------------------------------- | ------------------------------- |
-| [new copy 9.html](https://github.com/Samuel-08/prtlio/blob/master/newDapoer/new copy 9.html)   | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 9.html](https://github.com/Samuel-08/prtlio/blob/master/newDapoer/new%20copy%209.html)   | <code>► INSERT-TEXT-HERE</code> |
 | [abc.html](https://github.com/Samuel-08/prtlio/blob/master/newDapoer/abc.html)                 | <code>► INSERT-TEXT-HERE</code> |
 | [rev-3.html](https://github.com/Samuel-08/prtlio/blob/master/newDapoer/rev-3.html)             | <code>► INSERT-TEXT-HERE</code> |
 | [rev-5.html](https://github.com/Samuel-08/prtlio/blob/master/newDapoer/rev-5.html)             | <code>► INSERT-TEXT-HERE</code> |
@@ -166,68 +106,69 @@ Aplikasi ini tidak memiliki dependensi eksternal dan menggunakan teknologi berik
 
 | File                                                                                                | Summary                         |
 | --------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [new copy 10.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 10.html)         | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 10.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%2010.html)         | <code>► INSERT-TEXT-HERE</code> |
 | [login.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/login.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [index 5.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index 5.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [home 2.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/home 2.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [index 4.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index 4.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 5.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 5.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [index 5.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index%205.html)                 | <code>► INSERT-TEXT-HERE</code> |
+| [home 2.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/home%202.html)                   | <code>► INSERT-TEXT-HERE</code> |
+| [index 4.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index%204.html)                 | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 5.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%205.html)           | <code>► INSERT-TEXT-HERE</code> |
 | [index7.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index7.html)                   | <code>► INSERT-TEXT-HERE</code> |
 | [login3.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/login3.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 11.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 11.html)         | <code>► INSERT-TEXT-HERE</code> |
-| [index 8.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index 8.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 4.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 4.html)           | <code>► INSERT-TEXT-HERE</code> |
-| [home 3.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/home 3.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 8.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 8.html)           | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 3.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 3.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 11.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%2011.html)         | <code>► INSERT-TEXT-HERE</code> |
+| [index 8.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/index%208.html)                 | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 4.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%204.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [home 3.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/home%203.html)                   | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 8.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%208.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 3.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%203.html)           | <code>► INSERT-TEXT-HERE</code> |
 | [Landing_beranda.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/Landing_beranda.html) | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 7.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 7.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 7.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%207.html)           | <code>► INSERT-TEXT-HERE</code> |
 | [new.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new.html)                         | <code>► INSERT-TEXT-HERE</code> |
 | [home.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/home.html)                       | <code>► INSERT-TEXT-HERE</code> |
 | [login2.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/login2.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [new copy 6.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new copy 6.html)           | <code>► INSERT-TEXT-HERE</code> |
+| [new copy 6.html](https://github.com/Samuel-08/prtlio/blob/master/dapoer/new%20copy%206.html)           | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
+## ⚙️ Configuration
 
-## Configuration
+Nggak ada konfigur
 
-Tidak ada konfigurasi khusus yang diperlukan untuk menjalankan aplikasi ini. Namun, Anda dapat menyesuaikan konten dan gaya dengan mengedit file HTML, CSS, dan JavaScript yang ada.
+asi ribet yang perlu dilakukan. Kalo mau, kamu bisa edit konten dan gaya lewat file HTML, CSS, dan JavaScript yang udah ada.
 
-## Documentation
+## 📖 Documentation
 
-Dokumentasi lebih lanjut tentang setiap komponen aplikasi dapat ditemukan dalam komentar pada kode sumber.
+Dokumentasi lebih lengkap bisa kamu temuin di komentar dalam kode sumber. Jadi, jangan ragu buat liat!
 
-## Examples
+## 🖼️ Examples
 
-Berikut adalah contoh penggunaan fitur-fitur aplikasi:
+Berikut beberapa contoh fitur yang ada di aplikasi ini:
 
-- ## **Login Display**:
-  ![Login](https://github.com/user-attachments/assets/f9d6bdcb-63af-4770-b55c-fd51ef277488)
-
----
-
-- **Top 3**:
-  ![Page Top 3](https://github.com/user-attachments/assets/0f75ff49-cf01-4ce1-81b1-9af3fc86b5a1)
+### **Login Display**:
+![Login](https://github.com/user-attachments/assets/f9d6bdcb-63af-4770-b55c-fd51ef277488)
 
 ---
 
-- **Promosi**:
-  ![Page Promosi](https://github.com/user-attachments/assets/f41f200d-f16f-4780-9c79-ee0b1a2ea6af)
+### **Top 3**:
+![Page Top 3](https://github.com/user-attachments/assets/0f75ff49-cf01-4ce1-81b1-9af3fc86b5a1)
 
 ---
 
-## Troubleshooting
+### **Promosi**:
+![Page Promosi](https://github.com/user-attachments/assets/f41f200d-f16f-4780-9c79-ee0b1a2ea6af)
 
-Jika Anda mengalami masalah saat menggunakan aplikasi ini, periksa hal berikut:
+---
 
-- Pastikan file `index.html` dibuka dengan benar di peramban.
-- Periksa konsol pengembang di peramban untuk pesan kesalahan JavaScript.
-- Pastikan semua file sumber (HTML, CSS, JavaScript) tersedia dan diakses dengan benar.
+## 🛠️ Troubleshooting
 
-## Contributors
+Kalo ada masalah, cek ini dulu:
 
-Terima kasih kepada semua kontributor yang telah berpartisipasi dalam pengembangan aplikasi ini.
+- Pastikan file `index.html` dibuka dengan benar di browser.
+- Cek konsol pengembang di browser buat pesan kesalahan JavaScript.
+- Pastikan semua file (HTML, CSS, JavaScript) tersedia dan bisa diakses.
+
+## 🙌 Contributors
+
+Terima kasih banyak untuk semua kontributor yang udah bantu pengembangan aplikasi ini!
 
 - Nama Kontributor 1
 - Nama Kontributor 2
@@ -236,25 +177,25 @@ Terima kasih kepada semua kontributor yang telah berpartisipasi dalam pengembang
 
 **_Requirements_**
 
-Ensure you have the following dependencies installed on your system:
+Pastikan kamu udah punya dependensi berikut terinstall di sistem kamu:
 
 - **Python**: `version x.y.z`
 
 ### ⚙️ Installation
 
-1. Clone the readme-ai-streamlit repository:
+1. Clone repositori ini:
 
 ```sh
 git clone https://github.com/eli64s/readme-ai-streamlit
 ```
 
-2. Change to the project directory:
+2. Masuk ke direktori proyek:
 
 ```sh
 cd readme-ai-streamlit
 ```
 
-3. Install the dependencies:
+3. Install dependensi:
 
 ```sh
 pip install -r requirements.txt
@@ -262,7 +203,7 @@ pip install -r requirements.txt
 
 ### 🤖 Running readme-ai-streamlit
 
-Use the following command to run readme-ai-streamlit:
+Jalankan aplikasi dengan perintah ini:
 
 ```sh
 python main.py
@@ -270,7 +211,7 @@ python main.py
 
 ### 🧪 Tests
 
-To execute tests, run:
+Untuk eksekusi tes, jalankan:
 
 ```sh
 pytest
@@ -280,36 +221,36 @@ pytest
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here are several ways you can contribute:
+Kontribusi kamu sangat berarti! Ini cara-cara buat ikut andil:
 
-- **[Submit Pull Requests](https://github.com/eli64s/readme-ai-streamlit/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/eli64s/readme-ai-streamlit/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/eli64s/readme-ai-streamlit/issues)**: Submit bugs found or log feature requests for Readme-ai-streamlit.
+- **[Submit Pull Requests](https://github.com/eli64s/readme-ai-streamlit/blob/main/CONTRIBUTING.md)**: Review PR yang ada, dan kirim PR kamu sendiri.
+- **[Join the Discussions](https://github.com/eli64s/readme-ai-streamlit/discussions)**: Share insight, kasih feedback, atau tanya-tanya.
+- **[Report Issues](https://github.com/eli64s/readme-ai-streamlit/issues)**: Laporkan bug yang ditemukan atau usulkan fitur baru.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
 
-1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+1. **Fork the Repository**: Mulai dengan fork repositori ke akun GitHub kamu.
+2. **Clone Locally**: Clone repositori yang udah di-fork ke mesin lokal.
    ```sh
    git clone https://github.com/eli64s/readme-ai-streamlit
    ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+3. **Create a New Branch**: Selalu kerja di branch baru dengan nama deskriptif.
    ```sh
    git checkout -b new-feature-x
    ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
+4. **Make Your Changes**: Kembangkan dan uji perubahan kamu secara lokal.
+5. **Commit Your Changes**: Commit dengan pesan yang jelas tentang pembaruan.
    ```sh
    git commit -m 'Implemented new feature x.'
    ```
-6. **Push to GitHub**: Push the changes to your forked repository.
+6. **Push to GitHub**: Push perubahan ke repositori yang sudah di-fork.
    ```sh
    git push origin new-feature-x
    ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+7. **Submit a Pull Request**: Buat PR ke repositori asli. Jelaskan perubahan dan alasannya.
 
-Once your PR is reviewed and approved, it will be merged into the main branch.
+Setelah PR kamu direview dan disetujui, PR tersebut akan digabungkan ke branch utama.
 
 </details>
 
@@ -317,12 +258,13 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ## 📄 License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+Proyek ini dilindungi oleh lisensi [SELECT-A-LICENSE](https://choosealicense.com/licenses). Untuk lebih jelasnya, cek file [LICENSE](https://choosealicense.com/licenses/) yang ada.
 
 ---
 
 ## 👏 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- Terima kasih kepada semua yang udah berkontribusi, memberi inspirasi, dan support dalam proyek ini!
 
 [**Return**](#-quick-links)
+ 
