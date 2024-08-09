@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dapoer Ayam - Memberikan Hidangan Terbaik Untukmu.">
+    <meta name="keywords" content="Dapoer Ayam, Ayam Goreng, Restoran, Makanan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Dapoer Ayam</title>
+    <style>
+        /* Variabel Warna */
+        :root {
+            --primary-color: #ffc300;
+            --secondary-color: #ffaeaf;
+            --text-color: #000000;
+            --card-border: rgba(0, 0, 0, 0.17);
+            --background-color: #ffffff;
+            --button-color: #ff5733;
+            --transition-duration: 600ms ease-out;
+        }
+
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            scroll-behavior: smooth;
+            /* Menambahkan smooth scrolling */
+        }
+
+        header {
+            position: fixed;
+            width: 100vw;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: var(--background-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        .btn-login {
+            padding: 10px 20px;
+            background-color: var(--button-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #e74c3c;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 120px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            height: 100vh;
+        }
+
+        .hero h1 {
+            font-size: 4.8rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background-color: var(--button-color);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e74c3c;
+        }
+
+        .content {
+            padding: 40px 120px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .content-item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 60px;
+            margin: 0 10px;
+        }
+
+        .content-item h2 {
+            font-size: 2rem;
+        }
+
+        .content-item p {
+            font-size: 1.25rem;
+        }
+
+        .content-item img {
+            width: 30vw;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-align-right {
+            text-align: right;
+        }
+
+        .menu {
+            text-align: center;
+            /* padding: 82px 20px; */
+            padding: 80px 10px 40px 10px;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 40vh;
+            background-color: whitesmoke;
+            border: 1px solid rgba(128, 128, 128, 0.140);
+            border-radius: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ffc251;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color var(--transition-duration), transform var(--transition-duration);
+        }
+
+
+        .more-products {
+            display: none;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+            transition: 0.4s ease-out, opacity 0.4s ease-out;
+        }
+
+        .more-products.visible {
+            display: flex;
+        }
+
+        .product-card {
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-description {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .article {
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .article.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        footer {
+            background-color: #eaeaea;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .contact,
+        .social {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .social a {
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            color: black;
+            font-size: 20px;
+            transition: color 300ms ease-out;
+        }
+
+        .social a.facebook:hover {
+            color: blue;
+        }
+
+        .social a.instagram:hover {
+            color: #d400ff;
+        }
+
+        .social a.twitter:hover {
+            color: deepskyblue;
+        }
+
+        .social a.tiktok:hover {
+            color: #ec0393;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                position: fixed;
+                bottom: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100vw;
+                height: 70px;
+            }
+
+            .logo img {
+                display: none;
+            }
+
+            nav ul {
+                justify-content: space-around;
+                gap: 12px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+                flex-direction: column;
+                text-align: center;
+                height: 100%;
+            }
+
+            .content-item {
+                padding: 0;
+                margin: 0;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .content-item .text,
+            .content-item img {
+                width: 80vw;
+                text-align: left;
+            }
+
+            .menu {
+                padding: 0 20px 40px 20px;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 60px;
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-20%);
+            }
+        }
+
+        /* Animasi untuk setiap section saat di-scroll */
+        .section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <header>
+        <div class="logo">
+            <img src="./newDapoer/assets/images/images2.png" alt="Logo Dapoer Ayam">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Menu</a></li>
+                <li><a href="#section3">About</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+            <button class="btn-login">Login</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="section1" class="hero">
+        <div class="hero-text">
+            <h1>Selamat Datang di Dapoer Ayam</h1>
+            <p>Menyajikan Makanan Terbaik dari Dapur Kami ke Meja Anda.</p>
+            <button>Pesan Sekarang</button>
+        </div>
+        <div class="hero-image">
+            <img src="./newDapoer/assets/images/images2.png" alt="Ayam Goreng">
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="section2" class="content section">
+        <div class="content-item text-align-right">
+            <div class="text">
+                <h2>Bahan Berkualitas Tinggi</h2>
+                <p>Kami selalu menggunakan bahan-bahan segar dan berkualitas tinggi untuk setiap hidangan yang
+                    kami sajikan.</p>
+            </div>
+            <img src="./newDapoer/assets/images/images2.png" alt="Bahan Berkualitas">
+        </div>
+
+        <div class="content-item">
+            <img src="./newDapoer/assets/images/images2.png" alt="Chef Professional">
+            <div class="text">
+                <h2>Chef Professional</h2>
+                <p>Chef kami adalah ahli dalam seni kuliner, menjamin setiap hidangan adalah mahakarya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <!-- Menu Section -->
+    <section id="section3" class="section menu">
+        <h2>Menu Favorit</h2>
+        <p>Temukan hidangan lezat kami yang disiapkan dengan cinta.</p>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="./newDapoer/assets/images/images2.png" alt="Ayam Goreng - Ayam yang digoreng renyah">
+                <p>Ayam Goreng</p>
+            </div>
+            <div class="menu-item">
+                <img src="./newDapoer/assets/images/images2.png"
+                    alt="Ayam Bakar - Ayam yang dibakar dengan rempah pilihan">
+                <p>Ayam Bakar</p>
+            </div>
+            <div class="menu-item">
+                <img src="./newDapoer/assets/images/images2.png"
+                    alt="Ayam Kremes - Ayam dengan taburan kremes yang renyah">
+                <p>Ayam Kremes</p>
+            </div>
+            <div class="menu-item">
+                <img src="./newDapoer/assets/images/images2.png" alt="Ayam Rica-Rica - Ayam pedas khas Manado">
+                <p>Ayam Rica-Rica</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Products Section -->
+    <section class="more-products">
+        <div class="product-card">
+            <img src="./newDapoer/assets/images/images2.png" alt="Produk 1">
+            <div class="product-title">Produk 1</div>
+            <div class="product-description">Deskripsi produk 1.</div>
+        </div>
+        <div class="product-card">
+            <img src="./newDapoer/assets/images/images2.png" alt="Produk 2">
+            <div class="product-title">Produk 2</div>
+            <div class="product-description">Deskripsi produk 2.</div>
+        </div>
+        <div class="product-card">
+            <img src="./newDapoer/assets/images/images2.png" alt="Produk 3">
+            <div class="product-title">Produk 3</div>
+            <div class="product-description">Deskripsi produk 3.</div>
+        </div>
+        <div class="product-card">
+            <img src="./newDapoer/assets/images/images2.png" alt="Produk 4">
+            <div class="product-title">Produk 4</div>
+            <div class="product-description">Deskripsi produk 4.</div>
+        </div>
+    </section>
+    <!-- Button to Show/Hide Products -->
+    <div class="menu">
+        <button id="toggle-products-btn" class="btn">Show More Products</button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="section4">
+        <div class="contact">
+            <h3>Hubungi Kami</h3>
+            <p>Email: info@dapoerayam.com</p>
+            <p>Telepon: +62 123 4567</p>
+        </div>
+        <div class="social">
+            <h3>Ikuti Kami</h3>
+            <a href="#" class="facebook" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i>
+                Facebook</a>
+            <a href="#" class="instagram" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i>
+                Instagram</a>
+            <a href="#" class="twitter" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i>
+                Twitter</a>
+            <a href="#" class="tiktok" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-products-btn');
+        const moreProductsSection = document.querySelector('.more-products');
+        let productsVisible = false;
+
+        toggleBtn.addEventListener('click', () => {
+            productsVisible = !productsVisible;
+            moreProductsSection.classList.toggle('visible', productsVisible);
+            toggleBtn.textContent = productsVisible ? 'Show Less Products' : 'Show More Products';
+        });
+
+
+
+        // Animasi saat scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('.section');
+
+            const activateSection = (targetSection) => {
+                sections.forEach(section => {
+                    section.classList.remove('active'); // Menghapus kelas 'active' dari semua section
+                });
+                targetSection.classList.add('active'); // Menambahkan kelas 'active' ke section yang ditargetkan
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+
+                    setTimeout(() => {
+                        activateSection(targetSection); // Memicu animasi setelah scroll selesai
+                    }, 500);
+                });
+            });
+
+            const onScroll = () => {
+                const scrollPosition = window.scrollY;
+
+                // Dapatkan lebar viewport untuk menentukan margin yang sesuai
+                const screenWidth = window.innerWidth;
+                let margin;
+
+                if (screenWidth < 768) { // Untuk perangkat mobile (misalnya, lebar kurang dari 768px)
+                    margin = 0; // Margin lebih kecil untuk perangkat mobile
+                } else { // Untuk perangkat tablet dan desktop
+                    margin = 30; // Margin lebih besar untuk perangkat yang lebih luas
+                }
+
+                sections.forEach(section => {
+                    if (scrollPosition >= section.offsetTop + margin && scrollPosition < section.offsetTop + section.offsetHeight) {
+                        activateSection(section); // Memicu animasi berdasarkan posisi scroll
+                    }
+                });
+            };
+
+
+            window.addEventListener('scroll', onScroll);
+            activateSection(document.getElementById('section1')); // Mengaktifkan animasi di bagian pertama saat halaman dimuat
+        });
+    </script>
+</body>
+
+</html>
